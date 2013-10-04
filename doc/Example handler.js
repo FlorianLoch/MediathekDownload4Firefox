@@ -3,6 +3,11 @@
 	THE HANDLER SHOULD BE LOCATED IN lib/MediathekHandler-DIRECTORY.	
 
 	Each handler need to be added to the MediathekCore-instance at initialization
+	
+	Also each handler needs to have an icon in the data/mediathekIcons-directory which can be
+	shown as part of the widgets content (beside the name of the mediathek, or being more precise the name of the channel).
+	The icon therefore has to be named like this: name is the result of a this.getNameOfChannel()-call
+	name.png
 */
 
 exports.ZDFHandler = ZDFHandler;
