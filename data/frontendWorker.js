@@ -1,3 +1,11 @@
 self.port.on("show", function (oMediathek) {
-	alert(oMediathek.name);
+	
+});
+
+self.port.on("showNoMediathek", function (oMediathek) {
+	
+});
+
+self.port.on("showURLs", function (oVideoURLs) {
+		
 });
