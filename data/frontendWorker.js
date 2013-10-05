@@ -11,7 +11,7 @@ self.port.on("showURLs", function (oVideoURLs) {
 	node.html("");
 	
 	for (var i = 0; i < oVideoURLs.length; i++) {
-		var btn = $("<button>" + oVideoURLs[i].desc + "</button>");
+		var btn = $("<button class='btn btn-primary btn-download'>" + oVideoURLs[i].desc + "</button>");
 
 		//This (complex) ways is needed because otherwise the data would just be 
 		//referenced, not copied - this would result in problems because of iterating		
