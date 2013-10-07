@@ -8,6 +8,8 @@
 	shown as part of the widgets content (beside the name of the mediathek, or being more precise the name of the channel).
 	The icon therefore has to be named like this: name is the result of a this.getNameOfChannel()-call
 	name.png
+	
+	By adding the object to the core, the core automatically adds a reference "parent" to itself by adding a new attribute.
 */
 
 exports.ZDFHandler = ZDFHandler;
