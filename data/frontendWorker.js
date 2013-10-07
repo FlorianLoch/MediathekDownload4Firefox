@@ -11,7 +11,7 @@ self.port.on("showURLs", function (oVideoURLs) {
 	node.html("");
 	
 	if (oVideoURLs == null) {
-		node.html("Beim Finden der Video-Dateien ist leider ein Fehler aufgetreten.")
+		node.html("Beim Suchen der Video-Dateien ist leider ein Fehler aufgetreten.")
 		return;
 	}
 	
