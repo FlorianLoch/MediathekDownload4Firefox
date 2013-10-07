@@ -10,6 +10,11 @@ self.port.on("showURLs", function (oVideoURLs) {
 	var node = $("#selectionLayer");
 	node.html("");
 	
+	if (oVideoURLs == null) {
+		node.html("Beim Finden der Video-Dateien ist leider ein Fehler aufgetreten.")
+		return;
+	}
+	
 	for (var i = 0; i < oVideoURLs.length; i++) {
 		var btn = $("<button class='btn btn-primary btn-download'>" + oVideoURLs[i].desc + " (" + round(oVideoURLs[i].fs / 1024 / 1024) + " mb)</button>");
 
@@ -30,10 +35,6 @@ self.port.on("showURLs", function (oVideoURLs) {
 function setLayer (sLayerId) {
 	$("div").hide();
 	$(sLayerId).show();	
-}
-
-function download() {
-	alert("Hallo");
 }
 
 function round(iVal) {

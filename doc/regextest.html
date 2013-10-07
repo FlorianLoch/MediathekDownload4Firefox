@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<script language="javascript">
+		function action() {
+			var str = '<source src="http://mvideos.daserste.de/videoportal/Film/c_360000/361608/format455055.mp4" data-quality="M">\r\n</source><source src="http://mvideos.daserste.de/videoportal/Film/c_360000/361608/format455088.mp4" data-quality="L"></source>\n<source src="http://mvideos.daserste.de/videoportal/Film/c_360000/361608/format455071.mp4" data-quality="L"></source>\n<source src="http://mvideos.daserste.de/videoportal/Film/c_360000/361608/format455056.mp4" data-quality="S"></source>';
+			
+			var ar = str.match(/http:\/\/mvideos.daserste.de\/videoportal\/[.\S]*mp4/g);
+			
+			for (var i = 0; i < ar.length; i++) {
+				document.write(ar[i] + "<br>");
+			}
+		}
+		</script>
+	</head>
+	<body onload="action();">
+	
+	</body>
+</html>
