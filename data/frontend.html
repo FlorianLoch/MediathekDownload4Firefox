@@ -2,19 +2,32 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 		<style>
+			body {
+				font-family: Arial;	
+				margin: 10px;
+			}
+		
 			.btn-download {
 				width: calc(100% - 10px);
-				margin: 5px;
+				margin-top: 10px;
 			}
 			
 			div {
 				text-align: center;
 			}
+			
+			#loadingGif {
+				margin: 10px;	
+			}
+			
+			#sadPingu {
+				height: 120px;	
+			}
 		</style>
 	</head>
 	<body>
 		<div id="loadingLayer">
-			<img src="loading.gif"><br>
+			<img id="loadingGif" src="loading.gif"><br>
 			Lade...
 		</div>
 		<div id="selectionLayer">

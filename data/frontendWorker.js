@@ -1,5 +1,8 @@
 self.port.on("showLoading", function (oMediathek) {
-	setLayer("#loadingLayer");
+	$("div").hide();
+	$("#selectionLayer").html("");
+	
+	$("#loadingLayer").show();
 });
 
 self.port.on("showNoMediathek", function (oMediathek) {
@@ -10,9 +13,22 @@ self.port.on("showURLs", function (oVideoURLs) {
 	var node = $("#selectionLayer");
 	node.html("");
 	
-	if (oVideoURLs == null) {
-		node.html("Beim Suchen der Video-Dateien ist leider ein Fehler aufgetreten.")
-		return;
+	if (oVideoURLs == null || oVideoURLs.length == 0) {
+		var text = "";
+		
+		if (oVideoURLs == null) {
+			text += "Beim Suchen der Video-Dateien ist leider ein Fehler aufgetreten.";
+		}
+		else {
+			text += "Für diese Sendung konnten keine herunterladbaren Videos gefunden werden.";	
+		}
+		
+		text += "<br>Das tut uns Leid!<br><img id='sadPingu' src='sad_pinguin.svg'>";
+		
+		node.html(text);
+		setLayer("#selectionLayer");
+
+		return;		
 	}
 	
 	for (var i = 0; i < oVideoURLs.length; i++) {
@@ -33,8 +49,16 @@ self.port.on("showURLs", function (oVideoURLs) {
 });
 
 function setLayer (sLayerId) {
-	$("div").hide();
-	$(sLayerId).show();	
+	$("div:not(" + sLayerId + ")").fadeOut({
+			duration: 400,
+			complete: function() {
+				setTimeout(function() {
+						$(sLayerId).delay(300).fadeIn({
+								duration: 400
+						}, 10000);
+				});
+			}
+	});
 }
 
 function round(iVal) {
