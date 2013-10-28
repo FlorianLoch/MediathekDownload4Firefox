@@ -5,7 +5,17 @@ self.port.on("showLoading", function (oMediathek) {
 	$("#loadingLayer").show();
 });
 
-self.port.on("showNoMediathek", function (oMediathek) {
+self.port.on("showNoMediathek", function (arMediatheken) {
+	var out = "Diese Seite konnte leider keiner Mediathek zugeordnet werden.<br>";
+	out += "<div id='mediathekenList'>Folgende Mediatheken werden unterstützt:";
+	out += "<ul>";
+	for (var i = 0; i < arMediatheken.length; i++) {
+		out += "<li><a target='_blank' href='" + arMediatheken[i].url + "'>" + arMediatheken[i].name + "</a></li>";
+	}
+	out += "</ul></div>";
+		
+	$("#noMediathekLayer").html(out);
+		
 	setLayer("#noMediathekLayer");
 });
 
@@ -49,7 +59,7 @@ self.port.on("showURLs", function (oVideoURLs) {
 });
 
 function setLayer (sLayerId) {
-	$("div:not(" + sLayerId + ")").fadeOut({
+	$("body > div:not(" + sLayerId + ")").fadeOut({
 			duration: 400,
 			complete: function() {
 				setTimeout(function() {
