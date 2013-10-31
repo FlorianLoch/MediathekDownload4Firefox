@@ -707,6 +707,7 @@ header p {
   -khtml-border-radius: 0px 2px 2px 0px;
   border-radius: 0px 2px 2px 0px;
   padding-right: 10px;
+  opacity: 0.96;
 }
 #banner .button {
   border: 1px solid #dba500;
