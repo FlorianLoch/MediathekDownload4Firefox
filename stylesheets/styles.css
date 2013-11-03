@@ -223,6 +223,19 @@ pre {
   margin: 1em 0;
 }
 
+
+/*
+ * 
+ */
+.emphDiv {
+  color: #efefef;
+  text-shadow: 0px 1px 0px #000;
+  background: #333;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+
 /*
  * Corrects font family set oddly in IE6, S4/5, Chrome
  * en.wikipedia.org/wiki/User:Davidgothberg/Test59
