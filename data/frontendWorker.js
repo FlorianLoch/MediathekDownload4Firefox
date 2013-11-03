@@ -64,8 +64,11 @@ function setLayer (sLayerId) {
 			complete: function() {
 				setTimeout(function() {
 						$(sLayerId).delay(300).fadeIn({
-								duration: 400
-						}, 10000);
+								duration: 400,
+								done: function () {
+									//self.port.emit("resizePanel", 330, $(sLayerId).height());
+								}
+						});
 				});
 			}
 	});
