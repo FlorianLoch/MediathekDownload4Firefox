@@ -9,7 +9,7 @@
 
   Florian D. Loch, 05.11.2013
 */
-  var fadeDuration = 500;
+  var fadeDuration = 300;
   var contentID = "#CONTENT";
 
   $(document).ready(function () {
