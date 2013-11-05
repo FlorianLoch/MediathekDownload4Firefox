@@ -2,8 +2,9 @@
 //Points has to be replaced by "%46" and "@" by "%6584" (ASCII codes for "A" and "T")
 //Florian Loch, 03.11.2013
 //Needs jQuery to work
-$(document).ready(function () {
+$(document).on("contentLoaded", function () {
 	decryptMailAdresses();
+	console.log("T;");
 });
 
 function decryptMailAdresses() {
