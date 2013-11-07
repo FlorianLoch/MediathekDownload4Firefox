@@ -235,6 +235,11 @@ pre {
   border-radius: 3px;
 }
 
+.emph {
+  font-weight: bold;
+  font-size: 120%;
+}
+
 
 /*
  * Corrects font family set oddly in IE6, S4/5, Chrome
