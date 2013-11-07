@@ -2,8 +2,8 @@
   "name": "mediathekdownload4firefox",
   "fullName": "MediathekDownload4Firefox",
   "id": "jid1-70kWXAnegKwQqg",
-  "description": "Mit diesem Add-on lassen sich spielend einfach Filme aus den Mediatheken der öffentlich-rechtlichen Sendern herunterladen (im Moment wird nur das ZDF unterstützt",
-  "author": "Florian Loch",
-  "license": "NOCH NICHT BEKANNT",
-  "version": "0.9"
+  "description": "Mit diesem Add-on lassen sich spielend einfach Filme aus den Mediatheken der öffentlich-rechtlichen Sendern herunterladen (im Moment wird nur das ZDF unterstützt. Website: http://florianloch.github.io/MediathekDownload4Firefox/",
+  "author": "Florian D. Loch",
+  "license": "MIT-Lizenz",
+  "version": "1.0"
 }
