@@ -14,7 +14,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 I am not working for ARD and ZDF and I also have no connection towards them. This addon has been developed in my spare time beside studying. If downloading movies from ARD or ZDF is against the law where you are living you are not allowed to use the addon. I am not responsible for possible damages or law breaks that may result from using this tool. By using the addon you are accepting this and the license printed above.
 
 ## Included third-party material/code
-* jQuery v1.10.2 (Copyright 2005, 2013 jQuery Foundation, Inc. | jquery.org/license) (Also licensed under MIT-License, full text see above)
+* jQuery v1.10.2 (Copyright 2005, 2013 jQuery Foundation, Inc. | jquery.org/license) (Also licensed under MIT-License, full text see above) (I had to update line 2 (source mapping header))
 * Bootstrap v3.0.0 (Copyright 2013 Twitter, Inc, Licensed under the Apache License v2.0, <2 class="0"></2> (or see file apache_license.txt))
 * The graphic of the sad pinguin ("sad_pinguin.svg") is taken from http://openclipart.org/detail/178504/sad-by-bartm-178504. I removed the background and changed the color of the tear drop towards a stronger blue.
 * The icon is a composition out of a download button (http://openclipart.org/detail/172272/download-by-dako-172272) and filmstripe (http://openclipart.org/detail/180091/video-by-arnelsx-180091). 
